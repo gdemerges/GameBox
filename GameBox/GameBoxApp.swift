@@ -5,6 +5,7 @@
 //  Created by Guillaume Demergès on 04/07/2024.
 //
 
+import SwiftData
 import SwiftUI
 
 @main
@@ -13,5 +14,6 @@ struct GameBoxApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Game.self)
     }
 }
